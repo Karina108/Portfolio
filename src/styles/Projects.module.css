@@ -1,0 +1,140 @@
+.projects {
+  background: var(--primary-bg);
+  color: #fff;
+}
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.workList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #1e1e1e; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  object-fit: cover;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s ease;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.layer p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.layer a {
+  color: #ff004f;
+  font-size: 35px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.layer a:hover {
+  transform: scale(1.1);
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .layer {
+  height: 100%;
+}
+
+.btn {
+  margin: 2rem auto;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #ff004f;
+}
+@media (max-width: 768px) {
+  h2{
+    font-size: 1.8rem;
+  }
+  .layer h3 {
+    font-size: 1rem;
+  }
+  .layer p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 12px 40px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .workList {
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 10px 30px;
+    font-size: 0.8rem;
+  }
+
+  .layer h3 {
+    font-size: 0.9rem;
+  }
+
+  .layer p {
+    font-size: 0.7rem;
+  }
+}

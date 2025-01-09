@@ -1,0 +1,78 @@
+.experience {
+    background: var(--primary-bg);
+    color: #fff;
+    overflow: hidden;
+  }
+  .experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+  }
+  
+  .cardContent {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cardContent h3 {
+    font-size: 2rem;
+    color: #ff004f;
+    margin-bottom: 1rem;
+  }
+  
+  .cardContent h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .cardContent .duration {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #a0a0a0;
+  }
+  
+  .cardContent p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cardContent .viewCertificate {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #ff004f;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .cardContent .viewCertificate:hover {
+    transform: translateY(-2px);
+    background: #ff3366;
+  }
+  @media (max-width: 768px) {
+    h2{
+      font-size: 1.8rem;
+    }
+    .card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

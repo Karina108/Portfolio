@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--secondary-bg); 
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    border-top: 2px solid #ff004f;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer span {
+    color: #ff004f;
+    font-weight: bold;
+  }
+  
